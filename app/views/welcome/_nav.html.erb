@@ -1,0 +1,8 @@
+<!--- render nav_guest if not a user or not signed in, render nab_user if a user and signed in -->
+
+<% if !user_signed_in? %>
+  <%= render '/layouts/nav_guest' %>
+<% else %>
+  <%= render '/layouts/nav_user' %>
+<% end %>
+
